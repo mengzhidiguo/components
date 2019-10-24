@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@mengzhidiguo/switch": [
+        "dist/mengzhidiguo/switch"
+      ],
+      "@mengzhidiguo/switch/*": [
+        "dist/mengzhidiguo/switch/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

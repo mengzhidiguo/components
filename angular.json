@@ -129,7 +129,7 @@
       "projectType": "library",
       "root": "projects/mengzhidiguo/switch",
       "sourceRoot": "projects/mengzhidiguo/switch/src",
-      "prefix": "lib",
+      "prefix": "mz",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
@@ -152,6 +152,41 @@
             "tsConfig": [
               "projects/mengzhidiguo/switch/tsconfig.lib.json",
               "projects/mengzhidiguo/switch/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@mengzhidiguo/select": {
+      "projectType": "library",
+      "root": "projects/mengzhidiguo/select",
+      "sourceRoot": "projects/mengzhidiguo/select/src",
+      "prefix": "mz",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/mengzhidiguo/select/tsconfig.lib.json",
+            "project": "projects/mengzhidiguo/select/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mengzhidiguo/select/src/test.ts",
+            "tsConfig": "projects/mengzhidiguo/select/tsconfig.spec.json",
+            "karmaConfig": "projects/mengzhidiguo/select/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/mengzhidiguo/select/tsconfig.lib.json",
+              "projects/mengzhidiguo/select/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

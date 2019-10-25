@@ -24,6 +24,12 @@
       ],
       "@mengzhidiguo/switch/*": [
         "dist/mengzhidiguo/switch/*"
+      ],
+      "@mengzhidiguo/select": [
+        "dist/mengzhidiguo/select"
+      ],
+      "@mengzhidiguo/select/*": [
+        "dist/mengzhidiguo/select/*"
       ]
     }
   },

@@ -3,7 +3,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
-  selector: 'lib-switch',
+  selector: 'mz-switch',
   templateUrl: './switch.component.html',
   styleUrls: ['./switch.component.scss'],
   providers: [{

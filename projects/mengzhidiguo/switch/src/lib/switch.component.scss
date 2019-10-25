@@ -1,0 +1,50 @@
+:host {
+	--switch-width: 36px;
+	--switch-height: 20px;
+	--switch-padding: 2px;
+	--switch-button-width: 16px;
+}
+
+.switch__container {
+	height: var(--switch-height);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+.switch__core {
+	height: var(--switch-height);
+	width: var(--switch-width);
+	background-color: gray;
+	border-radius: calc(var(--switch-height) / 2);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	box-sizing: border-box;
+	position: relative;
+
+	.switch__button {
+		transform: translate3d(var(--switch-padding), 0px, 0px);
+		transition: transform .3s, background-color .3s;
+		border-radius: 50%;
+		width: var(--switch-button-width);
+		height: var(--switch-button-width);
+		outline: none;
+		background-color: #fff;
+	}
+}
+
+.switch__input {
+	position: absolute;
+	opacity: 0;
+	margin: 0;
+}
+
+.switch__container__check {
+	background-color: burlywood;
+
+	.switch__button {
+		transform: translate3d(calc(var(--switch-width) - var(--switch-button-width) - var(--switch-padding)), 0px, 0px);
+	}
+}

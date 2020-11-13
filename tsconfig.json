@@ -30,6 +30,10 @@
       ],
       "@mengzhidiguo/select/*": [
         "dist/mengzhidiguo/select/*"
+      ],
+      "@mengzhidiguo/table-data-model": [
+        "dist/mengzhidiguo/table-data-model/mengzhidiguo-table-data-model",
+        "dist/mengzhidiguo/table-data-model"
       ]
     }
   },

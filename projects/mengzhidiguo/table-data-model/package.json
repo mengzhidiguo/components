@@ -1,0 +1,13 @@
+{
+  "name": "@mengzhidiguo/table-data-model",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^10.2.0",
+    "@angular/core": "^10.2.0",
+    "class-transformer": "^0.3.1",
+    "uuid": "^8.3.1"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

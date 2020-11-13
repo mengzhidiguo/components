@@ -187,6 +187,46 @@
           }
         }
       }
+    },
+    "@mengzhidiguo/table-data-model": {
+      "projectType": "library",
+      "root": "projects/mengzhidiguo/table-data-model",
+      "sourceRoot": "projects/mengzhidiguo/table-data-model/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/mengzhidiguo/table-data-model/tsconfig.lib.json",
+            "project": "projects/mengzhidiguo/table-data-model/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mengzhidiguo/table-data-model/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mengzhidiguo/table-data-model/src/test.ts",
+            "tsConfig": "projects/mengzhidiguo/table-data-model/tsconfig.spec.json",
+            "karmaConfig": "projects/mengzhidiguo/table-data-model/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/mengzhidiguo/table-data-model/tsconfig.lib.json",
+              "projects/mengzhidiguo/table-data-model/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "components"

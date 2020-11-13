@@ -1,0 +1,6 @@
+<main>
+	<div class="select-value" (click)="isOpen=!isOpen">{{label}}</div>
+	<div class="option-container" [ngClass]="triggerClass">
+		<ng-content select="app-option"></ng-content>
+	</div>
+</main>
